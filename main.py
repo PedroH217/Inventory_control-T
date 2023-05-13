@@ -1,11 +1,10 @@
 from functions import myFunctions
 import os
 
-for x in range(0,2):
+while True:
 
     command = myFunctions.menu()
 
-    os.system('cls' if os.name == 'nt' else 'clear')
 
     if command == 0:
         break
@@ -14,8 +13,8 @@ for x in range(0,2):
         myFunctions.insert()
 
     elif command == 2:
-        pass
+        myFunctions.withdraw()
 
     elif command == 3:
-        pass
+        myFunctions.search()
     
