@@ -4,6 +4,7 @@ class MyFunctions:
     def __init__(self):
         ...
 
+
     def line(self, tam=30):
 
         """
@@ -17,7 +18,7 @@ class MyFunctions:
     def listMenu(self, items=''):
         
         """
-            Gera uma lista menu para ser apresentada na tela do usuário.
+            Generates a menu list to be displayed on the user's screen.
         """
 
         self.line()
@@ -27,11 +28,11 @@ class MyFunctions:
 
         self.line()
     
+
     def menu(self):
 
         """
-            Invoca o menu para ser apresentado na tela e recebe a escolha do 
-            usuário.
+           Invokes the menu to be displayed on the screen and receives the choice of user.
         """ 
 
         self.listMenu(['Close program.', 'Insert new product.', 'Withdraw a Product.', 'Seach by Product.'])
@@ -47,8 +48,7 @@ class MyFunctions:
     def insert(self):
 
         """
-            Tela apresentada para Inserção de informações no 
-            banco de dados.
+            Screen presented for Insertion of information in the database.
         """
 
         while True:
@@ -62,14 +62,13 @@ class MyFunctions:
                 break
 
             except ValueError:
-                print('\nProduto deve ser um Nome e preço um Valor numérico\n')
+                print('\nProduct must be a Name and price a numeric value!\n')
 
     
     def withdraw(self):
 
         """
-            Tela apresentada para Remoção de produto na tela do
-            uauário.
+            Screen presented for Product Removal on the screen of user.
         """
 
         while True:
@@ -82,12 +81,12 @@ class MyFunctions:
             
             break
 
+
     def search(self):
 
         
         """
-            Tela apresentada para o usuário buscando encontrar produtos
-            no banco de dados.
+            Screen presented to the user seeking to find products in the database.
         """
 
         while True:
@@ -96,6 +95,7 @@ class MyFunctions:
             database_obj.search_bd(srch)
 
             break
+
 
 
 myFunctions = MyFunctions()
