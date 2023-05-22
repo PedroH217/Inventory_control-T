@@ -62,7 +62,7 @@ class MyFunctions:
                 break
 
             except ValueError:
-                print('\nProduto deve ser um Nome e preço um Valor numérico\n')
+                print('\nProduct must be a Name and price a numeric value!\n')
 
     
     def withdraw(self):

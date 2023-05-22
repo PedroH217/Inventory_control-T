@@ -16,26 +16,26 @@ class DB:
         for k in self.bd.keys():
             
             if k == item:
-                print(f'\nO item {k} foi ENCONTRADO !\n')
+                print(f'\nThe item {k} WAS found !\n')
                 time.sleep(1.5)
                 self.bd.pop(k, None)
-                print(f'\nO item {k} foi REMOVIDO !\n')
+                print(f'\nThe item {k} has been successfully removed!\n')
                 
                 return None
         
-        print(f'\nO produto {item} NÃO foi encontrado no estoque!')
+        print(f'\nThe product {item} NOT found in stock')
 
 
     def search_bd(self, item):
         for k in self.bd.keys():
 
             if k == item:
-                print(f'\nO produto {k} foi ENCONTRADO no estoque!\n')
+                print(f'\nThe product {k} WAS found in the stock\n')
                 time.sleep(1.5)
                 
                 return None
         
-        print(f'\nO produto {item} NÃO foi encontrado no estoque!')
+        print(f'\nThe product {item} NOT found in the stock !')
 
 
     def list_bd(self):
