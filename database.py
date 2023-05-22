@@ -1,17 +1,33 @@
 import time
 
+
+
 class DB:
+
+    """
+        Class responsible for interacting with the database in dictionary format.
+    """
+
     def __init__(self):
-        self.bd = {'Limão' : 12.4, 'Café' : 8.50}
+        self.bd = {'Lemon' : 12.4, 'Coffe' : 8.50}
 
 
     def insert_bd(self, product='', price=0):
+
+        """
+            Insert a product into the database.
+        """
+
         self.bd[product] = price
 
         print(f'\n{product} added to list !\n')
 
 
-    def withdraw_bd(self, item='', var=False):      
+    def withdraw_bd(self, item='', var=False):  
+
+        """
+            Remove a product from the database.
+        """    
         
         for k in self.bd.keys():
             
@@ -27,6 +43,11 @@ class DB:
 
 
     def search_bd(self, item):
+
+        """
+            Search for a product in the database.
+        """
+
         for k in self.bd.keys():
 
             if k == item:
@@ -39,9 +60,18 @@ class DB:
 
 
     def list_bd(self):
+
+        """
+            Makes the "print" of the database on the screen showing
+            all its products and corresponding values.
+        """
+
         for k, v in self.bd.items():
             print(f'Product : {k} | Price : {v}')
 
         print()
+
+
+
 
 database_obj = DB()
